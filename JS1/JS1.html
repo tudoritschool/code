@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="RO-ro">
+    <meta charset="UTF-8">
+    <title> My first HTML Page </title>
+</head>
+<body>
+    <h1>My first page with JavaScript</h1>
+
+<script type="text/javascript">
+    // Obiect (colectie de obiecte)(array) de orase cu numele orasului, temperatura.
+    // Daca temperatura este mai mare de 30grade scriem in consola  "Este foarte cald in ... (in loc de ... scriem orasul)" 
+    // Avem o colectie de date cu orase
+    // Trecem prin fiecare oras in parte din colectia de date
+    // Daca temperatura in orasul respectiv este mai mare de 30, afisam un console.log
+    const orase = [
+        {nume:"Timisoara", temperatura: 39},
+        {nume:"Cluj", temperatura: 36},
+        {nume: "Constanta", temperatura: 29},
+        {nume: "Sinaia", temperatura: 24}
+    ];
+
+    orase.forEach((oras)=> {
+        console.log("Fiecare obiect in parte", oras);
+        if( oras.temperatura > 30){
+            console.log("Este foarte cald in", oras.nume)
+        };
+    });
+
+    const number1 = 10;
+    const number2 = 5;
+
+    function procesareMare(n1, n2) {
+        const inmultire = n1 * n2;
+        let procesareFinala = 0;
+        if(inmultire > 30) {
+            procesareFinala = inmultire * 10;
+        } 
+        return procesareFinala;
+    }
+
+    const procesare = procesareMare(number1, number2);
+    console.log("procesare", procesare)
+    console.log("procesare directa", procesareMare(10, 2))
+
+
+    function sum(a, b){
+        const suma = a+b;
+        return suma;
+    };
+
+    console.log("Suma 1:", sum(5, 10));
+    console.log("Suma 2", sum(3, 70));
+    console.log("Suma 3", sum(8, 56));
+
+</script>
+</body>
+</html>

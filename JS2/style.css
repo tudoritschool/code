@@ -1,0 +1,37 @@
+
+body {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    height: 900px;
+    width: 900px;
+    background-color: beige;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    font-size: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x_cell {
+    background-color: brown;
+    color:white;
+}
+
+.o_cell {
+    background-color: aquamarine;
+    color: black;
+}

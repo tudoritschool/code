@@ -1,0 +1,33 @@
+.center_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  border-radius: 75px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.button::after {
+  content: " ->";
+}
+
+.button::before {
+  content: "* ";
+}
+
+.button:hover {
+  border: 2px solid crimson;
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  background-color: crimson;
+}

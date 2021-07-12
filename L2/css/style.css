@@ -1,0 +1,32 @@
+table {
+  border: 1px solid black;
+}
+
+.td_style {
+  background-color: rgba(122, 169, 133, 0.5);
+}
+
+#td_style_id {
+  background-color: blue;
+}
+
+.p_class {
+  font-size: 30px;
+}
+
+.paragraf_rosii {
+  color: red;
+  text-indent: 30px;
+  font-family: Lucida Sans Unicode;
+  font-weight: bold;
+}
+
+.paragraf_albastru {
+  color: blue;
+  text-indent: 100px;
+  font-style: italic;
+}
+
+input {
+  display: block;
+}

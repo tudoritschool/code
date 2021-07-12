@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina cu javascript</title>
+    </head>
+    <body>
+        <h1 id="title">Hello JavaScript!</h1>
+        <p id="paragraf" >Acest paragraf contine o descriere lunga</p>
+        <button type="button" onclick="apasaButon()" >Click me!</button>
+        <button type="button" onclick="modificaParagraf()">Modifica paragraf!!!</button>
+        <p id="paragraf_special" onclick="modificareParagraf()" >Ceva paragraf care se va modifica cand dam click</p>
+    <script>
+        let element = document.getElementById("title");
+        let paragraf = document.getElementById("paragraf");
+        let switchColor = false;
+
+        function apasaButon() {
+            element.style.color = "blue";
+            element.innerText = "Button Apasat!!!!!";
+        }
+
+        function modificaParagraf() {
+            paragraf.innerText = "Am modificat acest paragraf!!";
+        }
+
+        function modificareParagraf() {
+            let paragraf_special = document.getElementById("paragraf_special");
+            
+            if(switchColor === false) {
+                paragraf_special.style.color = "red"; 
+                switchColor = true;
+            } else {
+                paragraf_special.style.color = "blue";
+                switchColor = false;
+            }
+            
+            paragraf_special.style.fontSize = "35px";
+        }
+
+    </script>
+    </body>
+</html>

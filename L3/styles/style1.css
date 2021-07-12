@@ -1,0 +1,49 @@
+.box_model {
+  background-color: burlywood;
+  padding-left: 10px;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  display: inline-block;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green;
+  border-radius: 25px;
+}
+
+.wrapper {
+  height: 600px;
+  width: 600px;
+  background-color: green;
+}
+
+.element {
+  width: 250px;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+}
+
+.form_wrapper {
+  width: 100%;
+  background-color: green;
+}
+
+.form_box {
+  display: block;
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  background-color: red;
+}
+
+.input_class {
+  display: block;
+  margin-top: 10px;
+}
+
+.input_password {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}

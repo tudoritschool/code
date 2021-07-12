@@ -1,0 +1,10 @@
+.col_colored {
+	background-color: aqua;
+	border: 2px solid black;
+}
+
+.col_red {
+	background-color: brown;
+	color: white;
+	border: 2px solid black;
+}

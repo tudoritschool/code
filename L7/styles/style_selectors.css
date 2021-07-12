@@ -1,0 +1,7 @@
+p:first-child i {
+  background-color: yellow;
+}
+
+p:last-child i {
+  background-color: red;
+}

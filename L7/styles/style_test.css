@@ -1,0 +1,20 @@
+.order {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .order > ul:last-child {
+  background-color: red;
+} */
+
+/* li:last-child {
+  background-color: red;
+} */
+
+ul:first-child li:last-child {
+  background-color: red;
+}
+
+li:nth-child(3) {
+  background-color: teal;
+}

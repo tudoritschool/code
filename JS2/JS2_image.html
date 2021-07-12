@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina cu imagine</title>
+    </head>
+    <body>
+        <img id="ideea" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 150px" onclick="changeBec()">
+        <script>
+            let imagine = document.getElementById("ideea");
+            let switchBec = false;
+            function changeBec() {
+                if(switchBec === false) {
+                    imagine.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                    switchBec = true;
+                } else {
+                    imagine.src = "https://www.w3schools.com/js/pic_bulboff.gif"
+                    switchBec = false;
+                }
+            }
+        </script>
+    </body>
+</html>
