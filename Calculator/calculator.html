@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator !</h1>
+        <input type="number" name="number1" id="input1"/> 
+        <input type="number" name="number2" id="input2"/> 
+        <button type="button" onclick="afisare()">Vezi numere!</button>
+        <br/>
+        <button type="button" id="button_add">Adauga numere</button>
+        <button type="button" id="button_diff">Adauga numere</button>
+        <script>
+            console.log("Hello!, prima linie de cod!");
+            const numberOneElement = document.getElementById("input1");
+            const numberTwoElement = document.getElementById("input2");
+            const button = document.getElementById("button_add");
+            const button2 = document.getElementById("button_diff");
+            console.log("Elemente din html:", numberOneElement, numberTwoElement);
+
+            function afisare() {
+                console.log("Valori:", numberOneElement.value, numberTwoElement.value);
+                console.log("Tip valori:",typeof numberOneElement.value);
+                const numberOne = parseInt(numberOneElement.value);
+                const numberTwo = parseInt(numberTwoElement.value);
+                console.log("Numere", numberOne, numberTwo);
+                console.log("Tip numere",typeof numberOne);
+            }
+
+            // function suma() {
+            //     const numberOne = parseInt(numberOneElement.value);
+            //     const numberTwo = parseInt(numberTwoElement.value);
+            //     console.log("Suma:", numberOne + numberTwo);
+            // }
+
+            // function globalFunction(functionFromParameter) {
+            //     const a = 5;
+            //     functionFromParameter(a);
+
+            // }
+
+            // function addZero(number) {
+            //     console.log("NUMAR * 10", number * 10);
+            // }
+
+            // function addFive(number) {
+            //     console.log("NUMAR + 10", number + 5);
+            // }
+
+            // globalFunction(addZero);
+            // globalFunction(addFive);
+
+            // function ruleazaDupa2Secunde() {
+            //     console.log("A rulat")
+            // }
+
+            // setTimeout(ruleazaDupa2Secunde,2000);
+
+            button.addEventListener("click", function() {
+                const numberOne = parseInt(numberOneElement.value);
+                const numberTwo = parseInt(numberTwoElement.value);
+                console.log("Suma:", numberOne + numberTwo);
+            });
+
+            button2.addEventListener("click", function() {
+                const numberOne = parseInt(numberOneElement.value);
+                const numberTwo = parseInt(numberTwoElement.value);
+                console.log("Suma:", numberOne - numberTwo);
+            });
+
+            function adunare2Numere(n1, n2 ) {
+                return n1 + n2;
+            }
+
+            
+            adunare2Numere(5, 10);
+
+            const numar1 = 10;
+            const numar2 = 20;
+
+            adunare2Numere(numar1, numar2)
+
+
+        </script>
+    </body>
+</html>
