@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+            function myName(name) {
+                console.log("A rulat functia!");
+                return name
+            }
+
+            console.log("HELLO WORLD!" + myName("Tudor"));
+            console.log("HELLO WORLD!" + myName("Ovidiu"));
+
+            function laPacanea(number, generatorNumar) {
+                const randomNumber = generatorNumar();
+                if(number > randomNumber) {
+                    console.log("Ai castigat!", number + " > " + randomNumber);
+                } else  {
+                    console.log("Ai pierdut!", number + " < " + randomNumber);
+                }
+
+            }
+
+            function la100() {
+                console.log("SA APELAT LA100")
+                return Math.floor(Math.random() * 100);
+            }
+
+            function la1000() {
+                console.log("SA APELAT LA1000")
+               return Math.floor(Math.random() * 1000); 
+            }
+
+            laPacanea(4, la100);
+            laPacanea(68, la1000);
+
+            
+        </script>
+    </body>
+</html>
