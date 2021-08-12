@@ -50,7 +50,7 @@ function ReactList() {
 	};
 
 	return (
-		<>
+		<div className='react-view-container'>
 			<AddRobot handleAddUserAtr={handleAddUser} />
 			<SearchInput handleSearchUser={handleSearchUser} />
 			<div className='react-list-container'>
@@ -60,7 +60,7 @@ function ReactList() {
 					);
 				})}
 			</div>
-		</>
+		</div>
 	);
 }
 
